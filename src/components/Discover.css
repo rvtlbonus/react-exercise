@@ -1,0 +1,93 @@
+.discover {
+    background-color: white;
+}
+
+.discover-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 67.429vh;
+}
+
+.discover-container-1 {
+    flex: 1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 499px; 
+}
+
+.discover-container-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 580px;
+    margin-right: 5rem;
+}
+
+.discover-container-2 h1 {
+    font-family: var(--font-family);
+    line-height: 1.1em;
+    max-width: 390px;
+    letter-spacing: -0.04em;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.discover-container-2 p {
+    font-family: var(--font-family);
+    line-height: 28px;
+    margin-top: 1.5rem;
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.discover-container-3 p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .discover {}
+
+    .discover-container {
+        flex-direction: column-reverse;
+    }
+
+    .discover-container-2 {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .discover-container-2 h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .discover-container-2 h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .discover-container-2 p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+}

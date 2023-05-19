@@ -1,0 +1,47 @@
+* {
+  -webkit-box-align: center;
+  background-image: url();
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bgcolor); 
+}
+
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.pagepadding {
+  padding: 4rem 6rem;
+}
+
+.pagemargin {
+  margin: 4rem 6rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .pagepadding {
+    padding: 4rem;
+  }
+
+  .pagemargin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pagepadding {
+    padding: 4rem 2rem;
+  }
+
+  .pagemargin {
+    margin: 4rem 2rem;
+  }
+}

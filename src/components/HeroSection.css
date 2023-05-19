@@ -1,0 +1,18 @@
+import React from 'react';
+import './App.css';
+
+import {
+    BrowserRouter as Router
+}
+
+from "react-router-dom";
+import Home from './components/Home';
+import Discover from './components/Discover';
+import Features from './components/Features';
+import Contact from './components/Contact';
+
+function App() {
+    return (<Router> <Home /> <Discover /> <Features /> <Contact /> </Router>);
+}
+
+export default App;
