@@ -83,6 +83,7 @@ nav a {
         height: 50vh; 
         top: 120px;
         font-size: 18px;
+        background-color: rebeccapurple;
         flex-direction: column;
         transform: translateX(100%); 
         transition: 0.5s ease-in;
