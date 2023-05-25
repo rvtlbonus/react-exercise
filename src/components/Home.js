@@ -5,10 +5,7 @@ import iphone from './assets/iphone.png'
 
 function Home() {
 
-  const [prompt, setPrompt] = useState('');
-  const handleChange = event => {
-    setPrompt(event.target.value);
-  };
+
   return (
   <>
 
@@ -24,8 +21,6 @@ function Home() {
         <p> Oqulo is built to sell, manage and grow your commercial real estate business.
           Collect payments, manage clients and run reports using our booking app. 
           Engage members using our community messaging feature. </p>
-
-        
         <p> Be the first in line to take Oqulo for a test drive!</p>
       
       <div className="home-container-2__input">

@@ -1,19 +1,47 @@
 * {
   -webkit-box-align: center;
-  background-image: url();
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bgcolor); 
+    overflow: auto;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
 }
 
 
 a {
   color: unset;
   text-decoration: none;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .pagepadding {
@@ -37,6 +65,8 @@ a {
 }
 
 @media screen and (max-width: 550px) {
+
+
   .pagepadding {
     padding: 4rem 2rem;
   }
@@ -44,4 +74,9 @@ a {
   .pagemargin {
     margin: 4rem 2rem;
   }
+
+    body {
+      width: auto;
+    }
 }
+

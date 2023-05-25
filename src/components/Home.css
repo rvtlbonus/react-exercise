@@ -1,9 +1,11 @@
 .home{
-    background-image: url(assets/bg.png), url(assets/bg2.png);
+   background: url(assets/bg.png), url(assets/bg2.png); 
     background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-size: cover; 
+    width: 100%;  
 }
+
+
 .home-container {
     display: flex;
     flex-direction: row;
@@ -19,17 +21,17 @@
     max-width: 550px;
 }
 
-.home-container-1 img{
+.home-container-1 img {
+    max-width: 100%;
+    height: auto;
 }
 
 .home-container-2 {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
     max-width: 580px;
-    margin-right: 5rem;
 }
 
 .home-container-2 h1 {
@@ -97,8 +99,8 @@
     text-transform: uppercase;
     font-size: 16px;
     line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
+    background: #e8645c; 
+    border: 2px solid #e8645c;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 25px;
     padding: 0 1rem;
@@ -106,48 +108,76 @@
     cursor: pointer;
     outline: none;
 }
-
 @media screen and (max-width: 1050px) {
     .home{
+        width: auto; 
     }
     .home-container {
         flex-direction: column-reverse;
     }
-
-    .home-container-2 {
-        margin: 0 0 3rem;
-    }
 }
 
 @media screen and (max-width: 650px) {
-    .home-container-2 h1 {
-        font-size: 48px;
-        line-height: 60px;
+    .home{
+        background: url(assets/bg2.png);
+        background-size: cover;
     }
 
-
-    .home-container-2__input input,
-    .home-container-2__input button {
-        font-size: 16px;
-        line-height: 24px;
-    }
+.home-container {
+    margin-top: 40px;;
 }
+    .home-container-2 h1{
+        font-size: 2rem;
+        width: 270px;
+        margin-left: 15px;
+        letter-spacing: 0.1rem;
+        line-height: 30px;
 
-@media screen and (max-width: 490px) {
-    .home-container-2 h1 {
-        font-size: 36px;
-        line-height: 48px;
     }
 
     .home-container-2 p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1.331rem;
+        width: 290px;
+        letter-spacing: 0.15rem;
+        line-height: 20px;
+        gap: 10px;
+        height: auto;
+        margin-left: 15px;
     }
 
-    .home-container-2__input input,
+
+    .home-container-2__input {
+        display: flex;
+        margin-top: auto;
+        flex-direction: column;
+        align-items: left;
+
+    }
+
+    .home-container-2__input input {
+        width: 286px;
+        height: 50px;
+        margin-left: 15px;
+        padding-left: 30px;
+        font-size: 1.3331rem;
+        
+
+    }
     .home-container-2__input button {
-        font-size: 12px;
-        line-height: 16px;
+        width: 166px;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .home-container-3 {
+        height: 36px; 
+    }
+
+    #warning p{
+        font-size: 1.3331rem;
+        color: #e7b0e3; 
     }
 }
+
 

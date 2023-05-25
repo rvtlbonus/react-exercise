@@ -11,7 +11,7 @@ function Stats() {
         <p className> View sales charts, booking ratio and user behavior using Oqulo’s visual reporting feature. </p>
 
         <div className="stats-container2 pagepadding">
-        <img src={bars} />
+          .
         </div>
 
       </div>

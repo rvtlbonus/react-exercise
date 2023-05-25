@@ -1,6 +1,6 @@
 
 .Footer{
-    background: url(assets/bg5.png);
+    background-image: url(assets/bg5.png); 
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -16,10 +16,6 @@
 .copyright {
     font-family: var(--font-family);
     margin-top: 36px;
-    @media screen and (min-width: 700px) {
-        display: row; 
-    list-style-type: style;
-  }
 }
 
 .footer-menu {
@@ -32,3 +28,35 @@
 
 }
 
+
+@media screen and (max-width: 1024px) {
+
+    .Footer {
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    img {
+        height: 51px;
+    }
+    .footer-menu {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+    }
+
+    .copyright{
+        font-size: 1.1669rem;
+    }
+
+
+
+
+
+}

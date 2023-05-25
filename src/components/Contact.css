@@ -74,12 +74,47 @@
     text-transform: uppercase;
     font-size: 16px;
     line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
+    background: #e8645c;
+    border: 2px solid #e8645c;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 25px;
     padding: 0 1rem;
     color: #fff;
     cursor: pointer;
     outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .contact {
+                background: url(assets/bg2.png);
+                background-size: cover;
+            }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-container-2__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-container-2__input input{
+        width: 290px;
+    }
+
+        .contact-container-2__input button {
+        width: 194px;
+        margin-top: 20px;
+    }
+
+
+
+
 }

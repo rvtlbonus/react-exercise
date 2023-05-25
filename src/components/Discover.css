@@ -1,5 +1,6 @@
 .discover {
     background-color: white;
+    width: 100%;
 }
 
 .discover-container {
@@ -11,23 +12,45 @@
 }
 
 .discover-container-1 {
-    flex: 1;
-    display: inline-block;
     justify-content: center;
     align-items: center;
-    max-width: 499px; 
+
+}
+
+        #flex {
+            display: flex;
+            flex-direction: row;
+    
+        }
+
+.discover-container-1 img{
+    max-width: 100%;
+    height: auto;
 }
 
 .discover-container-2 {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
     max-width: 580px;
     margin-right: 5rem;
 }
 
+.discover-container-3{
+    display: none;
+}
+
+.discover-container-3 p{
+        font-family: var(--font-family);
+            line-height: 28px;
+            margin-top: 1.5rem;
+            max-width: 440px;
+            margin-bottom: 35px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 24px;
+}
 .discover-container-2 h1 {
     font-family: var(--font-family);
     line-height: 1.1em;
@@ -59,35 +82,87 @@
     margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 1050px) {
-    .discover {}
+@media screen and (max-width: 1024px) {
+    .discover {
+        width: auto;
+    }
 
-    .discover-container {
-        flex-direction: column-reverse;
+    .discover-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .discover-container-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .discover-container-2 h1 {
+            font-size: 2rem;
+            width: 255px;
+            margin-top: 53px;
+            margin-left: 15px;
+            line-height: 20px;
+        }
+
+    
+        .discover-container-2 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+
+    #flex {
+        display: flex;
+        flex-direction: column-reverse; 
+        
+    }
+
+    #item1{
+        order: 1;
+    }
+
+    #item2{
+        order: 2;
+    }
+
+    #item3{
+        order: 3;
+    }
+     .discover-container-text {
+            display: none;
+    }
+
+
+    .discover-container-3 {
+            display: flex; 
+            flex-direction: column;
+    }
+
+        .discover-container-3 p {
+           font-size: 1.331rem;
+           letter-spacing: 0.10rem;
+           line-height: 20px; 
+            width: 290px;
+    }
+        
+        
+    
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .discover {
+        width: auto;
     }
 
     .discover-container-2 {
-        margin: 0 0 3rem;
-    }
-}
+        text-align: left;
 
-@media screen and (max-width: 650px) {
-    .discover-container-2 h1 {
-        font-size: 48px;
-        line-height: 60px;
     }
-}
-
-@media screen and (max-width: 490px) {
-    .discover-container-2 h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
-
-    .discover-container-2 p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
 
 }

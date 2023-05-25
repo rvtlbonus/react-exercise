@@ -15,17 +15,17 @@ function Features() {
             <h1> Oqulo Features at a Glance </h1>
             <p> Powerful functionalities that changes the way you do business. </p> 
          </div>
-         <div className="features-content ">
+         <div className="features-content flex">
 
-                <div className="features-content-col">
-                    <div className="features-content-row">
+                <div className="features-content-col " id="itema">
+                    <div className="features-content-row" id="first">
                         <div className="features-content-row-text">
                         <h2> Powerful Space Management </h2>
                         <p> Manage meeting room and desk bookings, create events, sell tickets, schedule private office showings, automate invoicing and connect with members --- all in one central dashboard. </p>
                         </div>
                         <img src={icon1} />
                     </div>
-                    <div className="features-content-row">
+                    <div className="features-content-row1">
                         <div className="features-content-row-text">
                         <h2> Painless Integration </h2>
                         <p> No matter what your website is built on, Oqulo is easy to setup and integrate with CRM and payment gateways. Go live in a matter of days. </p>
@@ -33,10 +33,10 @@ function Features() {
                         <img src={icon2} />
                     </div>                    
                 </div>
-                <div className="features-content-col">
+                <div className="features-content-mid" id="itemb">
                     <img src={screen} />
                 </div>
-                <div className="features-content-col">
+                <div className="features-content-col" id="itemc">
                      <div className="features-content-row2">
                     <img src={icon3} />
                         <div className="features-content-row-text">
@@ -44,7 +44,7 @@ function Features() {
                         <p> Clients will find it easy to book and pay for their space, thanks to Oqulo’s easy navigation and pixel-perfect design. Keep members up to date with Oqulo’s community board and help desk features. </p>
                         </div>
                     </div>                    
-                    <div className="features-content-row2">  
+                    <div className="features-content-row3">  
                      <img src={icon4} />
                          <div className="features-content-row-text">                                         
                             <h2> Secure Data & White Label Branding </h2>

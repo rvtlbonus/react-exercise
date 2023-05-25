@@ -59,8 +59,21 @@ nav a {
 }
 
 @media screen and  (max-width: 960px){
+
+    .navbar{
+        height: auto;
+        row-gap: 150px;
+    }
+
     .navbar-hamburger {
-        display: block;
+        display: flex;
+        margin-left: 80px;
+        align-items: right;
+        margin-top: 10px;
+    }
+
+    .hamburger{
+        align-items: right;
     }
 
     .navbar-menu{
@@ -70,12 +83,18 @@ nav a {
         height: 50vh; 
         top: 120px;
         font-size: 18px;
-        background-color: rgba(88, 68, 156, 0.90);
         flex-direction: column;
         transform: translateX(100%); 
         transition: 0.5s ease-in;
     }
+
+    .logo img{
+        width: 106px;
+        align-items: left;
+        margin-top: 30px;
+    }
 }
+
 
 .navbar-visible{
     transform: translateX(0);
